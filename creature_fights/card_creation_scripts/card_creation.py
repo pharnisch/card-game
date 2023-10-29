@@ -31,15 +31,26 @@ class Card:
         text_layer = self.get_text_layer()
         image = Image.alpha_composite(image, text_layer)
 
+        image = self.add_special_info(image)
+
         #########################
 
         image.save(self.file_name)
         #os.system(self.file_name) # show file
 
+    def add_special_info(self, image):
+        if self.data["equipment_slot"] == True and self.data["spell_slot"] == True:
+            image = self.add_text(image, f"(Slot: Ausrüstung o. Zauber)", 120, 60, 200, 12)
+        elif self.data["spell_slot"] == True:
+            image = self.add_text(image, f"(Slot: Zauber)", 120, 60, 200, 12)
+        elif self.data["equipment_slot"] == True:
+            image = self.add_text(image, f"(Slot: Ausrüstung)", 120, 60, 200, 12)
+        return image
+
     def get_text_layer(self):
         img2 = ImageText((240, 336), mode="RGBA", background=(0, 0, 0, 30), maximum_font_size=16)
         img2.image.convert("PA")
-        img2.fill_text_box((120, 20), self.data["name"], box_width=180, box_height=50, font_filename=self.font_name)
+        img2.fill_text_box((120, 20), self.data["name"], box_width=180, box_height=40, font_filename=self.font_name)
         overlay = img2.image
         overlay.convert("RGBA")
         return overlay
@@ -55,12 +66,15 @@ class Card:
 
     def add_image(self, image):
         im2 = Image.open('../../assets/goblin.png')
-        # im2.resize((4,4))
+
+        #im2.thumbnail((232, 232), Image.Resampling.LANCZOS)
+        #im2 = im2.crop((0, 49, im2.width - 1, im2.height - 49))
+
         im2.thumbnail((232, 232), Image.Resampling.LANCZOS)
-        im2 = im2.crop((0, 49, im2.width - 1, im2.height - 49))
+        #im2 = im2.crop((0, 49, im2.width - 1, im2.height - 49))
 
         image = image.copy()
-        image.paste(im2, (5, 51))
+        image.paste(im2, (5, 336-232-28))
         return image
 
     def draw_lines(self, image):
@@ -73,8 +87,9 @@ class Card:
         draw.line(xy=[(0, 0), (image.width, 0), (image.width, image.height), (0, image.height), (0, 0)],
                   fill=self.neutralColorA, width=10)
         #draw.line(xy=[(0, 25), (image.width, 25)], fill=self.neutralColorA, width=1)
-        draw.line(xy=[(0, 50), (image.width, 50)], fill=self.neutralColorA, width=1)
-        draw.line(xy=[(0, 185), (image.width, 185)], fill=self.neutralColorA, width=1)
+        #draw.line(xy=[(0, 50), (image.width, 50)], fill=self.neutralColorA, width=1)
+        draw.line(xy=[(0, 336-232-28-2), (image.width, 336-232-28-2)], fill=self.neutralColorA, width=2)
+        #draw.line(xy=[(0, 185), (image.width, 185)], fill=self.neutralColorA, width=1)
         draw.line(xy=[(0, 310), (image.width, 310)], fill=self.neutralColorA, width=5)
 
     def draw_main_stats(self, image):
@@ -90,10 +105,10 @@ class Card:
         draw.rectangle([(182, 313), (235, 331)], fill=(helligkeit, 255, helligkeit))
         # total_width = 240 - 5*5 = 215, 215/4= 53,75
 
-        image = self.add_text(image, f"{self.data['initiative']} INIT", 31, 323, 50, 20)
-        image = self.add_text(image, f"{self.data['attack']} ATK", 89, 323, 50, 20)
-        image = self.add_text(image, f"{self.data['defense']} DEF", 151, 323, 50, 20)
-        image = self.add_text(image, f"{self.data['health_points']} HP", 209, 323, 50, 20)
+        image = self.add_text(image, f"{self.data['initiative']} INIT", 31, 323, 50, 16)
+        image = self.add_text(image, f"{self.data['attack']} ATK", 89, 323, 50, 16)
+        image = self.add_text(image, f"{self.data['defense']} DEF", 151, 323, 50, 16)
+        image = self.add_text(image, f"{self.data['health_points']} HP", 209, 323, 50, 16)
 
         return image
 

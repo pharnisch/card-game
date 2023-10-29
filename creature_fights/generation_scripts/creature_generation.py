@@ -4,7 +4,7 @@ import json
 
 AMOUNT = 50
 MIN_COST = 0
-MAX_COST = 20
+MAX_COST = 15
 ITEM_POINTS_SCALE = 2
 
 class Creature:
