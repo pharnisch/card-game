@@ -44,7 +44,8 @@ def text_on_img(filename='01.png', text="Hello", size=12):
 		total = r+g+b
 		change = round(total/40)
 
-		new_image.append((r-2*change,g+1*change,b+1*change,a))
+		#new_image.append((r-2*change,g+1*change,b+1*change,a))
+		new_image.append((r,g,b,a))
 	image.putdata(new_image)
 	draw = ImageDraw.Draw(image, mode="RGBA")
 	# draw text
@@ -103,9 +104,11 @@ def text_on_img(filename='01.png', text="Hello", size=12):
 
 
 	# ADD NEW LAYER OF TEXT
-	img2 = ImageText((240, 336), mode="RGBA", background=(0, 0, 0, 30))
+	img2 = ImageText((240, 336), mode="RGBA", background=(0, 0, 0, 30), maximum_font_size=30)
+	img2.image.convert("PA")
 	img2.fill_text_box((120, epoch_mid), "asfjsd", box_width=200, box_height=50, font_filename=font_name)
 	overlay = img2.image
+	overlay.convert("RGBA")
 	image = image.convert("RGBA")
 	image = Image.alpha_composite(image, overlay)
 	image = image.convert("RGB")
@@ -119,10 +122,8 @@ def text_on_img(filename='01.png', text="Hello", size=12):
 	image = image.copy()
 	image.paste(im2, (5, 51))
 
-
-
-
-
+	#image = image.resize((240, 336), resample=Image.LANCZOS)
+	#print(image.size)
 	# save file
 	image.save(filename)
 	# show file
