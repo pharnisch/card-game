@@ -16,7 +16,7 @@ class Creature:
             "defense": 0,
             "health_points": 1,
             "cost_silver": 0,
-            "victory_points": 0,
+            "victory_points": 1, # 1 default per creature
             "equipment_slot": False,
             "spell_slot": False,
         }
