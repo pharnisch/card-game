@@ -28,7 +28,7 @@ class Card:
 
         # image = self.draw_main_stats(image)
 
-        # image = self.add_image(image)
+        image = self.add_image(image)
 
         text_layer = self.get_text_layer()
         image = Image.alpha_composite(image, text_layer)
@@ -53,7 +53,7 @@ class Card:
 
         #image = self.draw_main_stats(image)
 
-        #image = self.add_image(image)
+        image = self.add_image_cropped(image)
 
         text_layer = self.get_text_layer()
         image = Image.alpha_composite(image, text_layer)
@@ -77,7 +77,7 @@ class Card:
 
         #image = self.draw_main_stats(image)
 
-        #image = self.add_image(image)
+        image = self.add_image_cropped(image)
 
         text_layer = self.get_text_layer()
         image = Image.alpha_composite(image, text_layer)
@@ -101,7 +101,7 @@ class Card:
 
         #image = self.draw_main_stats(image)
 
-        #image = self.add_image_cropped(image)
+        image = self.add_image_cropped(image)
 
         text_layer = self.get_text_layer()
         image = Image.alpha_composite(image, text_layer)
@@ -126,7 +126,7 @@ class Card:
 
         image = self.draw_main_stats(image)
 
-        #image = self.add_image(image)
+        image = self.add_image(image)
 
         text_layer = self.get_text_layer()
         image = Image.alpha_composite(image, text_layer)
@@ -190,7 +190,7 @@ class Card:
         return image
 
     def add_image(self, image):
-        im2 = Image.open('../../assets/goblin.png')
+        im2 = Image.open('../../assets/empty.png')
 
         #im2.thumbnail((232, 232), Image.Resampling.LANCZOS)
         #im2 = im2.crop((0, 49, im2.width - 1, im2.height - 49))
@@ -203,7 +203,7 @@ class Card:
         return image
 
     def add_image_cropped(self, image):
-        im2 = Image.open('../../assets/goblin.png')
+        im2 = Image.open('../../assets/empty.png')
 
         im2.thumbnail((232, 232), Image.Resampling.LANCZOS)
         im2 = im2.crop((0, 49, im2.width - 1, im2.height - 49))
@@ -311,36 +311,27 @@ class Card:
 if False:
     pass
 
-    with open("../card_data/equipment_and_spells", "r") as f:
-        content = f.read()
-        content = json.loads(content)
-        for idx, card_data in enumerate(content):
-            card = Card(f"equipment_and_spells-{idx}", card_data)
-            card.generate_equipment_and_spells()
 
+with open("../card_data/creatures", "r") as f:
+    content = f.read()
+    content = json.loads(content)
+    for idx, card_data in enumerate(content):
+        card = Card(f"creature-{idx}", card_data)
+        card.generate_creature()
 
+with open("../card_data/events", "r") as f:
+    content = f.read()
+    content = json.loads(content)
+    for idx, card_data in enumerate(content):
+        card = Card(f"event-{idx}", card_data)
+        card.generate_event()
 
-
-    with open("../card_data/creatures", "r") as f:
-        content = f.read()
-        content = json.loads(content)
-        for idx, card_data in enumerate(content):
-            card = Card(f"creature-{idx}", card_data)
-            card.generate_creature()
-
-    with open("../card_data/events", "r") as f:
-        content = f.read()
-        content = json.loads(content)
-        for idx, card_data in enumerate(content):
-            card = Card(f"event-{idx}", card_data)
-            card.generate_event()
-
-    with open("../card_data/interrupts", "r") as f:
-        content = f.read()
-        content = json.loads(content)
-        for idx, card_data in enumerate(content):
-            card = Card(f"interrupt-{idx}", card_data)
-            card.generate_interrupt()
+with open("../card_data/interrupts", "r") as f:
+    content = f.read()
+    content = json.loads(content)
+    for idx, card_data in enumerate(content):
+        card = Card(f"interrupt-{idx}", card_data)
+        card.generate_interrupt()
 
 with open("../card_data/buffs", "r") as f:
     content = f.read()
@@ -348,6 +339,14 @@ with open("../card_data/buffs", "r") as f:
     for idx, card_data in enumerate(content):
         card = Card(f"buff-{idx}", card_data)
         card.generate_buff()
+
+with open("../card_data/equipment_and_spells", "r") as f:
+    content = f.read()
+    content = json.loads(content)
+    for idx, card_data in enumerate(content):
+        card = Card(f"equipment_and_spells-{idx}", card_data)
+        card.generate_equipment_and_spells()
+
 
 
 

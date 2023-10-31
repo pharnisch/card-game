@@ -129,7 +129,14 @@ data = [
 "type": "spell",
 "description": "Spielende: Erhalte so viel Zynalith wie du an Magiewesen besitzt."
 },
-
+{
+"name": "Endloses Leben",
+"cost_silver": 0,
+"cost_zynalith": 5,
+"victory_points": 0,
+"type": "spell",
+"description": "Tod: Ersetze dieses Wesen mit dem nächsten Wesen des Nachziehstapels. Übernehme alle vorherigen Zusatzkarten, inklusive diesem Zauber."
+},
 
 {
 "name": "Fernrohr",
@@ -258,6 +265,22 @@ data = [
 "victory_points": 1,
 "type": "equipment",
 "description": "Sofort: Gebe allen Mitspielern 3 Silber von dir, danach heilen sich alle Spieler voll."
+},
+{
+"name": "Trauer-Kasse",
+"cost_silver": 4,
+"cost_zynalith": 0,
+"victory_points": 1,
+"type": "equipment",
+"description": "Trauer: Erhalte 2 Silber."
+},
+{
+"name": "Gewürze",
+"cost_silver": 3,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Trauer: Heile die HP von dir oder diesem Wesen um 1."
 },
 ]
 

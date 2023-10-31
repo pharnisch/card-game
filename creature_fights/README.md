@@ -50,7 +50,15 @@ Für jeden Sieg in einer Linie, erhält der Gewinner 1 Zynalith
 
 Keywords für Triggerzeitpunkt:
 - Sofort: sofort
-- Kampf: in jeder Kampfrunde (auch Sturmangriff), in dem es mindestens einen Gegner in der Linie gibt; Innerhalb einer Linie wird in folgender Reihe abgearbeitet: INIT-Reihenfolge > ATK-Wert > DEF-Wert > Verbleibende HP > Schere-Stein-Papier
+- Kampf: Zu Beginn jeder Kampfrunde (auch Sturmangriff), in dem es mindestens einen Gegner in der Linie gibt; Innerhalb einer Linie wird in folgender Reihe abgearbeitet: INIT-Reihenfolge > ATK-Wert > DEF-Wert > Verbleibende HP > Schere-Stein-Papier
+- Spielende: nach der fünften Runde
+- Tod: Nachdem das Wesen gestorben ist
+- Trauer: Nachdem ein Wesen gestorben ist
+- Event: Nachdem ein Event ausgeführt wurde
+- Zauber: Nachdem ein Zauber ausgespielt wurde von Hand oder Auslage
+- Ausrüstung: Nachdem eine Ausrüstung ausgespielt wurde von Hand oder Auslage
+- Eigenschaft: Nachdem eine Eigenschaft ausgespielt wurde von Hand oder Auslage
+- Gier: Nachdem eine Karte mit mindestens 12 Silber oder 4 Zynalith erworben wurde
 Keywords für Effekt:
 - Sturmangriff: Zusätzliche spontane Kampfrunde nur für diese Linie
 - Blutsaugen: Schaden, den dieses Wesen an gegnerischen Helden verursacht, heilt es den eigenen Helden
