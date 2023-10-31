@@ -41,6 +41,94 @@ data = [
 "type": "spell",
 "description": "Sofort: Alle Eigenschafts-Karten aller Spieler gehen auf die Hand ihres Besitzers zurück."
 },
+{
+"name": "Opfer-Ritual",
+"cost_silver": 0,
+"cost_zynalith": 2,
+"victory_points": 0,
+"type": "spell",
+"description": "Sofort: Zerstöre ein eigenes Wesen und erhalte die doppelten Kosten zurück."
+},
+{
+"name": "Kometen-Hagel",
+"cost_silver": 0,
+"cost_zynalith": 2,
+"victory_points": 1,
+"type": "spell",
+"description": "Kampf: Wirf beliebig viele Karten von deiner Hand ab und verursache allen Mitspielern Schaden entsprechend der Anzahl."
+},
+{
+"name": "Schutz-Zauber",
+"cost_silver": 0,
+"cost_zynalith": 2,
+"victory_points": 0,
+"type": "spell",
+"description": "Passiv: Dieses Wesen kann immer nur jeweils 1 Schaden erleiden."
+},
+{
+"name": "Feuerball",
+"cost_silver": 0,
+"cost_zynalith": 1,
+"victory_points": 0,
+"type": "spell",
+"description": "Sofort: Füge einem Spieler 4 Schaden zu."
+},
+{
+"name": "Funke",
+"cost_silver": 0,
+"cost_zynalith": 1,
+"victory_points": 0,
+"type": "spell",
+"description": "Kampf: Füge einem Spieler oder Wesen 1 Schaden zu."
+},
+{
+"name": "Verjüngung",
+"cost_silver": 0,
+"cost_zynalith": 1,
+"victory_points": 0,
+"type": "spell",
+"description": "Kampf: Heile einen Spieler oder Wesen um 1 HP."
+},
+{
+"name": "Erdbeben",
+"cost_silver": 0,
+"cost_zynalith": 4,
+"victory_points": 2,
+"type": "spell",
+"description": "Spielende: Füge ALLEN Spielern 8 Schaden zu."
+},
+{
+"name": "Ausgeglichene Magie",
+"cost_silver": 0,
+"cost_zynalith": 4,
+"victory_points": 3,
+"type": "spell",
+"description": "Sofort: Setze alle Spieler auf 15 HP."
+},
+{
+"name": "Federleichter Flug",
+"cost_silver": 0,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "spell",
+"description": "Sofort: Gebe ein Wesen auf die Hand des Spielers zurück samt Zusatzkarten, er erhält aber nur die Kosten des Wesens erstattet."
+},
+{
+"name": "Heilender Nebel",
+"cost_silver": 0,
+"cost_zynalith": 1,
+"victory_points": 0,
+"type": "spell",
+"description": "Kampf: Heile die beiden Wesen neben diesem um 1."
+},
+{
+"name": "Dimensionsriss",
+"cost_silver": 0,
+"cost_zynalith": 4,
+"victory_points": 3,
+"type": "spell",
+"description": "Spielende: Erhalte so viel Zynalith wie du an Magiewesen besitzt."
+},
 
 
 {
@@ -50,6 +138,14 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Sofort: Ziehe eine Karte."
+},
+{
+"name": "Wunschbrunnen",
+"cost_silver": 4,
+"cost_zynalith": 0,
+"victory_points": 1,
+"type": "equipment",
+"description": "Kampf: Ziehe eine Karte."
 },
 {
 "name": "Minenwerkzeug",
@@ -114,6 +210,54 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Sofort: Zerstöre ein Wesen mit ATK-Wert >= 7 (insgesamt)."
+},
+{
+"name": "Erste-Hilfe-Set",
+"cost_silver": 5,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Kampf: Heile dieses Wesen voll."
+},
+{
+"name": "Poesie-Band",
+"cost_silver": 12,
+"cost_zynalith": 0,
+"victory_points": 2,
+"type": "equipment",
+"description": "Spielende: Erhalte so viel Zynalith wie verbleibende HP auf diesem Wesen sind."
+},
+{
+"name": "Landkarte",
+"cost_silver": 3,
+"cost_zynalith": 0,
+"victory_points": 2,
+"type": "equipment",
+"description": "Passiv: Du kannst auch die Position deiner Wesen mit einem INIT-Unterschied von bis zu 1 vertauschen."
+},
+{
+"name": "Landkarte",
+"cost_silver": 6,
+"cost_zynalith": 0,
+"victory_points": 2,
+"type": "equipment",
+"description": "Passiv: Du kannst auch die Position deiner Wesen mit einem INIT-Unterschied von bis zu 2 vertauschen."
+},
+{
+"name": "Gezinkte Würfel",
+"cost_silver": 4,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Sofort: Vertausche von zwei Wesen die Magiekarten mit selben Kosten."
+},
+{
+"name": "Diplomatie-Urkunde",
+"cost_silver": 0,
+"cost_zynalith": 0,
+"victory_points": 1,
+"type": "equipment",
+"description": "Sofort: Gebe allen Mitspielern 3 Silber von dir, danach heilen sich alle Spieler voll."
 },
 ]
 
