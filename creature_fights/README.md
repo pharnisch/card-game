@@ -71,3 +71,4 @@ Sonstiges:
 Offene Ideen:
 - Zwei Fronten
 - Gesichtsloser Krieger 0/?/?/?, 1VP, 15Silber (erhält Werte des Wesens links neben diesem (ohne Zusatzkarten))
+- Unsicher, ob 5 oder doch 6-8 Runden (?) -> Effektidee: Apokalypse Es endet früher (schon nach 5 Runden, ansonsten normal nach 7 z.B.). Oder normal 5 Runden und Apokalypse: 4 Runden, Kriegserklärung: 6 Runden (Apokalypse > Kriegserklärung)
