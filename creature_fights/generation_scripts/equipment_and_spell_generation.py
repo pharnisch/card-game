@@ -238,7 +238,7 @@ data = [
 },
 {
 "name": "Giftphiole",
-"cost_silver": 7,
+"cost_silver": 3,
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
