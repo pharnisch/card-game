@@ -14,7 +14,7 @@ class Creature:
             "initiative": random.randrange(0, 10+1),  # mid from 0 to 10
             "attack": 0,
             "defense": 0,
-            "health_points": 1,
+            "health_points": random.randrange(1, 3),
             "cost_silver": 0,
             "victory_points": 1, # 1 default per creature
             "equipment_slot": False,
@@ -53,10 +53,11 @@ class Creature:
                 self.item_points -= 2 * ITEM_POINTS_SCALE
                 print(f"bought one VP for 2 silver")
         elif per_cent < 30:
-            if self.item_points >= 1 * ITEM_POINTS_SCALE:
+            health_cost = 0.5
+            if self.item_points >= health_cost * ITEM_POINTS_SCALE:
                 self.data["health_points"] += 1
-                self.item_points -= 1 * ITEM_POINTS_SCALE
-                print(f"bought one HP for 1 silver")
+                self.item_points -= health_cost * ITEM_POINTS_SCALE
+                print(f"bought one HP for {health_cost} silver")
         elif per_cent < 65:
             current_cost = 0.5
             if self.data["defense"] > 3:

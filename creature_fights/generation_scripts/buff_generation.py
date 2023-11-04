@@ -35,7 +35,7 @@ data = [
 "initiative": 0,
 "attack": 0,
 "defense": -1,
-"health_points": 3
+"health_points": 6
 },
 {
 "name": "Arglistig",
@@ -89,7 +89,7 @@ data = [
 "initiative": -2,
 "attack": -1,
 "defense": -1,
-"health_points": 2
+"health_points": 4
 },
 {
 "name": "Siegessicher",
@@ -115,7 +115,7 @@ data = [
 "victory_points": 0,
 "initiative": 0,
 "attack": 0,
-"defense": "*2",
+"defense": "x2",
 "health_points": 0
 },
 {
@@ -123,7 +123,7 @@ data = [
 "cost_silver": 10,
 "victory_points": 0,
 "initiative": 0,
-"attack": "*2",
+"attack": "x2",
 "defense": 0,
 "health_points": 0
 },

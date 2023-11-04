@@ -137,6 +137,32 @@ data = [
 "type": "spell",
 "description": "Tod: Ersetze dieses Wesen mit dem nächsten Wesen des Nachziehstapels. Übernehme alle vorherigen Zusatzkarten, inklusive diesem Zauber."
 },
+{
+"name": "Wandelnder Kristall",
+"cost_silver": 0,
+"cost_zynalith": 5,
+"victory_points": 0,
+"type": "spell",
+"description": "Tod: Erhalte 10 Zynalith."
+},
+{
+"name": "Arkaner Sturm",
+"cost_silver": 0,
+"cost_zynalith": 1,
+"victory_points": 0,
+"type": "spell",
+"description": "Sofort: Alle müssen Karten abwerfen sodass sie maximal noch 2 Karten auf der Hand haben."
+},
+{
+"name": "Apokalypse",
+"cost_silver": 0,
+"cost_zynalith": 2,
+"victory_points": 0,
+"type": "spell",
+"description": "Passiv: Das Spiel endet nach der 4. Runde."
+},
+
+
 
 {
 "name": "Fernrohr",
@@ -280,7 +306,39 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Trauer: Heile die HP von dir oder diesem Wesen um 1."
+"description": "Trauer: Heile die HP von dir oder diesem Wesen um 2."
+},
+{
+"name": "Spurt-Sandalen",
+"cost_silver": 1,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Passiv: Du kannst pro Zug 1 bis 2 Hauptaktionen durchführen."
+},
+{
+"name": "Grab-Schaufel",
+"cost_silver": 0,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Trauer: Ziehe eine Karte."
+},
+{
+"name": "Leiser Dolch",
+"cost_silver": 4,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Trauer: Erhalte 1 Zynalith."
+},
+{
+"name": "Kriegserklärung",
+"cost_silver": 5,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Passiv: Es gibt eine zusätzliche 6. Runde (außer bei einer Apokalypse)."
 },
 ]
 
