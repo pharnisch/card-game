@@ -42,6 +42,14 @@ data = [
 "description": "Sofort: Alle Eigenschafts-Karten aller Spieler gehen auf die Hand ihres Besitzers zurück."
 },
 {
+"name": "Zerquetschen",
+"cost_silver": 0,
+"cost_zynalith": 2,
+"victory_points": 0,
+"type": "spell",
+"description": "Sofort: Zerstöre von ALLEN Spielern die zwei äußersten Wesen."
+},
+{
 "name": "Opfer-Ritual",
 "cost_silver": 0,
 "cost_zynalith": 2,
