@@ -268,10 +268,10 @@ class Card:
 
         creature = (0,0,0)
         spell = (2,-4,2)
-        equip = (2,1,-2)
-        interrupt = (4,-2,-2)
+        equip = (4,-2,-2) #(2,1,-2)
+        interrupt = (4,4,4)
         event = (2,2,-4)
-        buff = (-1,3,1)
+        buff = (-3,-2,4) #(-1,3,1)
 
         for idx, item in enumerate(d):
             r = item[0]
@@ -326,6 +326,13 @@ with open("../card_data/events", "r") as f:
         card = Card(f"event-{idx}", card_data)
         card.generate_event()
 
+with open("../card_data/equipment_and_spells", "r") as f:
+    content = f.read()
+    content = json.loads(content)
+    for idx, card_data in enumerate(content):
+        card = Card(f"equipment_and_spells-{idx}", card_data)
+        card.generate_equipment_and_spells()
+
 with open("../card_data/interrupts", "r") as f:
     content = f.read()
     content = json.loads(content)
@@ -340,12 +347,6 @@ with open("../card_data/buffs", "r") as f:
         card = Card(f"buff-{idx}", card_data)
         card.generate_buff()
 
-with open("../card_data/equipment_and_spells", "r") as f:
-    content = f.read()
-    content = json.loads(content)
-    for idx, card_data in enumerate(content):
-        card = Card(f"equipment_and_spells-{idx}", card_data)
-        card.generate_equipment_and_spells()
 
 
 
