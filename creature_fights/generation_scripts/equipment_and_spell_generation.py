@@ -269,7 +269,7 @@ data = [
 "description": "Spielende: Erhalte so viel Zynalith wie verbleibende HP auf diesem Wesen sind."
 },
 {
-"name": "Landkarte",
+"name": "Kleine Landkarte",
 "cost_silver": 3,
 "cost_zynalith": 0,
 "victory_points": 2,
@@ -277,7 +277,7 @@ data = [
 "description": "Passiv: Du kannst auch die Position deiner Wesen mit einem INIT-Unterschied von bis zu 1 vertauschen."
 },
 {
-"name": "Landkarte",
+"name": "Große Landkarte",
 "cost_silver": 6,
 "cost_zynalith": 0,
 "victory_points": 2,
