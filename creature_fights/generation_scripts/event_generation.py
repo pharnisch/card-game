@@ -3,7 +3,8 @@ import json
 data = [
 {
 "name": "Goblin-Diplomat",
-"description": "Am Ende dieser Runde findet kein Kampf statt."
+"description": "Am Ende dieser Runde findet kein Kampf statt.",
+"image": "goblin_diplomat"
 },
 {
 "name": "Elfen-Fürst",
@@ -15,7 +16,8 @@ data = [
 },
 {
 "name": "Bettler",
-"description": "Alle mit mindestens einem Silber geben eines ab."
+"description": "Alle mit mindestens einem Silber geben eines ab.",
+"image": "hands_full_of_silver"
 },
 {
 "name": "Instabiles Naturphänomen",

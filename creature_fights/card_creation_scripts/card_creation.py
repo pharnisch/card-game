@@ -190,7 +190,10 @@ class Card:
         return image
 
     def add_image(self, image):
-        im2 = Image.open('../../assets/empty.png')
+        if "image" in self.data:
+            im2 = Image.open(f'../../assets/{self.data["image"]}.png')
+        else:
+            im2 = Image.open('../../assets/empty.png')
 
         #im2.thumbnail((232, 232), Image.Resampling.LANCZOS)
         #im2 = im2.crop((0, 49, im2.width - 1, im2.height - 49))
@@ -203,7 +206,10 @@ class Card:
         return image
 
     def add_image_cropped(self, image):
-        im2 = Image.open('../../assets/empty.png')
+        if "image" in self.data:
+            im2 = Image.open(f'../../assets/{self.data["image"]}.png')
+        else:
+            im2 = Image.open('../../assets/empty.png')
 
         im2.thumbnail((232, 232), Image.Resampling.LANCZOS)
         im2 = im2.crop((0, 49, im2.width - 1, im2.height - 49))
@@ -319,12 +325,7 @@ if False:
             card = Card(f"creature-{idx}", card_data)
             card.generate_creature()
 
-    with open("../card_data/events", "r") as f:
-        content = f.read()
-        content = json.loads(content)
-        for idx, card_data in enumerate(content):
-            card = Card(f"event-{idx}", card_data)
-            card.generate_event()
+
 
     with open("../card_data/equipment_and_spells", "r") as f:
         content = f.read()
@@ -340,15 +341,21 @@ if False:
             card = Card(f"interrupt-{idx}", card_data)
             card.generate_interrupt()
 
-with open("../card_data/buffs", "r") as f:
+    with open("../card_data/buffs", "r") as f:
+        content = f.read()
+        content = json.loads(content)
+        for idx, card_data in enumerate(content):
+            card = Card(f"buff-{idx}", card_data)
+            card.generate_buff()
+
+
+
+
+
+
+with open("../card_data/events", "r") as f:
     content = f.read()
     content = json.loads(content)
     for idx, card_data in enumerate(content):
-        card = Card(f"buff-{idx}", card_data)
-        card.generate_buff()
-
-
-
-
-
-
+        card = Card(f"event-{idx}", card_data)
+        card.generate_event()
