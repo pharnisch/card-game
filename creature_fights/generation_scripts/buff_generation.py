@@ -8,7 +8,8 @@ data = [
 "initiative": 2,
 "attack": 0,
 "defense": 1,
-"health_points": 0
+"health_points": 0,
+"image": "fast_child"
 },
 {
 "name": "Stark",
@@ -17,7 +18,8 @@ data = [
 "initiative": -1,
 "attack": 2,
 "defense": 0,
-"health_points": 0
+"health_points": 0,
+"image": "strong_troll"
 },
 {
 "name": "Wagemutig",
@@ -26,7 +28,8 @@ data = [
 "initiative": 1,
 "attack": 1,
 "defense": 0,
-"health_points": 0
+"health_points": 0,
+"image": "elve_warrior"
 },
 {
 "name": "Wohlgenährt",
@@ -35,7 +38,8 @@ data = [
 "initiative": 0,
 "attack": 0,
 "defense": -1,
-"health_points": 6
+"health_points": 6,
+"image": "fat_king"
 },
 {
 "name": "Arglistig",
@@ -44,7 +48,8 @@ data = [
 "initiative": -1,
 "attack": 3,
 "defense": -1,
-"health_points": 0
+"health_points": 0,
+"image": "rogue"
 },
 {
 "name": "Geduldig",
@@ -53,7 +58,8 @@ data = [
 "initiative": -5,
 "attack": 0,
 "defense": 0,
-"health_points": 0
+"health_points": 0,
+"image": "quiet_orc"
 },
 {
 "name": "Ungeduldig",
@@ -62,7 +68,8 @@ data = [
 "initiative": 5,
 "attack": 0,
 "defense": 0,
-"health_points": 0
+"health_points": 0,
+"image": "goblin_auctioneer"
 },
 {
 "name": "Ausgeglichen",
@@ -71,7 +78,8 @@ data = [
 "initiative": 0,
 "attack": 1,
 "defense": 1,
-"health_points": 0
+"health_points": 0,
+"image": "quiet_human"
 },
 {
 "name": "Steinern",
@@ -80,7 +88,8 @@ data = [
 "initiative": -1,
 "attack": -1,
 "defense": 3,
-"health_points": 0
+"health_points": 0,
+"image": "stone_golem"
 },
 {
 "name": "Verträumt",
@@ -89,7 +98,8 @@ data = [
 "initiative": -2,
 "attack": -1,
 "defense": -1,
-"health_points": 4
+"health_points": 4,
+"image": "quiet_woman"
 },
 {
 "name": "Siegessicher",
@@ -98,7 +108,8 @@ data = [
 "initiative": 0,
 "attack": 0,
 "defense": 0,
-"health_points": 0
+"health_points": 0,
+"image": "strong_goblin"
 },
 {
 "name": "Adelig",
@@ -107,7 +118,8 @@ data = [
 "initiative": 0,
 "attack": 0,
 "defense": 0,
-"health_points": 0
+"health_points": 0,
+"image": "women_1"
 },
 {
 "name": "Unverwundbar",
@@ -116,7 +128,8 @@ data = [
 "initiative": 0,
 "attack": 0,
 "defense": "x2",
-"health_points": 0
+"health_points": 0,
+"image": "high_priestess"
 },
 {
 "name": "Blutrünstig",
@@ -125,7 +138,8 @@ data = [
 "initiative": 0,
 "attack": "x2",
 "defense": 0,
-"health_points": 0
+"health_points": 0,
+"image": "angry_dwarve"
 },
 ]
 

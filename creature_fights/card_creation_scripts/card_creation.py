@@ -240,6 +240,7 @@ class Card:
             draw.text((10, 20), f"{self.data['cost_silver']} S", font=self.font, fill=self.neutralColorA)
         if "cost_zynalith" in self.data and self.data['cost_zynalith'] > 0:
             draw.text((10, 35), f"{self.data['cost_zynalith']} Z", font=self.font, fill=self.neutralColorA)
+
         draw.line(xy=[(0, 336-232-28-2), (image.width, 336-232-28-2)], fill=self.neutralColorA, width=2)
         #draw.line(xy=[(0, 185), (image.width, 185)], fill=self.neutralColorA, width=1)
 
@@ -328,6 +329,28 @@ if False:
 
 
 
+
+
+
+
+
+
+
+
+    with open("../card_data/events", "r") as f:
+        content = f.read()
+        content = json.loads(content)
+        for idx, card_data in enumerate(content):
+            card = Card(f"event-{idx}", card_data)
+            card.generate_event()
+
+    with open("../card_data/equipment_and_spells", "r") as f:
+        content = f.read()
+        content = json.loads(content)
+        for idx, card_data in enumerate(content):
+            card = Card(f"equipment_and_spells-{idx}", card_data)
+            card.generate_equipment_and_spells()
+
     with open("../card_data/interrupts", "r") as f:
         content = f.read()
         content = json.loads(content)
@@ -335,28 +358,9 @@ if False:
             card = Card(f"interrupt-{idx}", card_data)
             card.generate_interrupt()
 
-    with open("../card_data/buffs", "r") as f:
-        content = f.read()
-        content = json.loads(content)
-        for idx, card_data in enumerate(content):
-            card = Card(f"buff-{idx}", card_data)
-            card.generate_buff()
-
-
-
-
-
-
-with open("../card_data/events", "r") as f:
+with open("../card_data/buffs", "r") as f:
     content = f.read()
     content = json.loads(content)
     for idx, card_data in enumerate(content):
-        card = Card(f"event-{idx}", card_data)
-        card.generate_event()
-
-with open("../card_data/equipment_and_spells", "r") as f:
-    content = f.read()
-    content = json.loads(content)
-    for idx, card_data in enumerate(content):
-        card = Card(f"equipment_and_spells-{idx}", card_data)
-        card.generate_equipment_and_spells()
+        card = Card(f"buff-{idx}", card_data)
+        card.generate_buff()

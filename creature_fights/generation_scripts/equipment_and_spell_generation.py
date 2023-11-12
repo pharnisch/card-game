@@ -200,7 +200,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Sofort: Ziehe eine Karte.",
-"image": ""
+"image": "telescope"
 },
 {
 "name": "Wunschbrunnen",
@@ -209,7 +209,7 @@ data = [
 "victory_points": 1,
 "type": "equipment",
 "description": "Kampf: Ziehe eine Karte.",
-"image": ""
+"image": "wishing_well"
 },
 {
 "name": "Minenwerkzeug",
@@ -218,7 +218,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Kampf: Erhalte 1 Zynalith.",
-"image": ""
+"image": "mining_tools"
 },
 {
 "name": "Lupe",
@@ -227,7 +227,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Sofort: Erhalte 1 Zynalith.",
-"image": ""
+"image": "lupe"
 },
 {
 "name": "Banner",
@@ -236,7 +236,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Sofort: Sturmangriff.",
-"image": ""
+"image": "banner"
 },
 {
 "name": "Rostige Klinge",
@@ -245,7 +245,7 @@ data = [
 "victory_points": 1,
 "type": "equipment",
 "description": "Kampf: Gegnerwesen der Linie verlieren 1 HP.",
-"image": ""
+"image": "sword_1"
 },
 {
 "name": "Krone",
@@ -254,7 +254,7 @@ data = [
 "victory_points": 3,
 "type": "equipment",
 "description": "",
-"image": ""
+"image": "crown_1"
 },
 {
 "name": "Brüchiger Talisman des Schutzes",
@@ -263,7 +263,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Kampf: Falls dieses Wesen einen Kampf verlieren sollte, erhältst du in diesem Kampf keinen Schaden - zerstöre dann außerdem diese Ausrüstungskarte.",
-"image": ""
+"image": "talisman_1"
 },
 {
 "name": "Schurken-Rucksack",
@@ -272,7 +272,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Sofort: Lege eine Ausrüstungskarte von einem gegnerischen Wesen unter ein eigenes.",
-"image": ""
+"image": "backpack"
 },
 {
 "name": "Giftphiole",
@@ -281,7 +281,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Sofort: Zerstöre ein Wesen mit ATK-Wert >= 7 (insgesamt).",
-"image": ""
+"image": "green_liquid_1"
 },
 {
 "name": "Erste-Hilfe-Set",
@@ -290,7 +290,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Kampf: Heile dieses Wesen voll.",
-"image": ""
+"image": "first_aid"
 },
 {
 "name": "Poesie-Band",
@@ -299,7 +299,7 @@ data = [
 "victory_points": 2,
 "type": "equipment",
 "description": "Spielende: Erhalte so viel Zynalith wie verbleibende HP auf diesem Wesen sind.",
-"image": ""
+"image": "green_book"
 },
 {
 "name": "Kleine Landkarte",
@@ -308,7 +308,7 @@ data = [
 "victory_points": 2,
 "type": "equipment",
 "description": "Passiv: Du kannst auch die Position deiner Wesen mit einem INIT-Unterschied von bis zu 1 vertauschen.",
-"image": ""
+"image": "map_small"
 },
 {
 "name": "Große Landkarte",
@@ -317,16 +317,16 @@ data = [
 "victory_points": 2,
 "type": "equipment",
 "description": "Passiv: Du kannst auch die Position deiner Wesen mit einem INIT-Unterschied von bis zu 2 vertauschen.",
-"image": ""
+"image": "map_big"
 },
 {
-"name": "Gezinkte Würfel",
+"name": "Gezinkter Würfel",
 "cost_silver": 4,
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
 "description": "Sofort: Vertausche von zwei Wesen die Magiekarten mit selben Kosten.",
-"image": ""
+"image": "die"
 },
 {
 "name": "Diplomatie-Urkunde",
@@ -335,7 +335,7 @@ data = [
 "victory_points": 1,
 "type": "equipment",
 "description": "Sofort: Gebe allen Mitspielern 3 Silber von dir, danach heilen sich alle Spieler voll.",
-"image": ""
+"image": "scroll_diplomatic"
 },
 {
 "name": "Trauer-Kasse",
@@ -344,7 +344,7 @@ data = [
 "victory_points": 1,
 "type": "equipment",
 "description": "Trauer: Erhalte 2 Silber.",
-"image": ""
+"image": "cashbox"
 },
 {
 "name": "Gewürze",
@@ -353,7 +353,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Trauer: Heile die HP von dir oder diesem Wesen um 2.",
-"image": ""
+"image": "spices"
 },
 {
 "name": "Spurt-Sandalen",
@@ -362,7 +362,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Passiv: Du kannst pro Zug 1 bis 2 Hauptaktionen durchführen.",
-"image": ""
+"image": "sandals"
 },
 {
 "name": "Grab-Schaufel",
@@ -371,7 +371,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Trauer: Ziehe eine Karte.",
-"image": ""
+"image": "shovel"
 },
 {
 "name": "Leiser Dolch",
@@ -380,7 +380,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Trauer: Erhalte 1 Zynalith.",
-"image": ""
+"image": "black_dagger"
 },
 {
 "name": "Kriegserklärung",
@@ -389,7 +389,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Passiv: Es gibt eine zusätzliche 6. Runde (außer bei einer Apokalypse).",
-"image": ""
+"image": "crow"
 },
 ]
 

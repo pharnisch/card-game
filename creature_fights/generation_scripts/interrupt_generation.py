@@ -6,21 +6,24 @@ data = [
 "cost_silver": 0,
 "cost_zynalith": 1,
 "victory_points": 0,
-"description": "Konter: Verhindere das Ausspielen einer Magie-Karte, nachdem sie bezahlt wurde. Sie wird zerstört."
+"description": "Konter: Verhindere das Ausspielen einer Magie-Karte, nachdem sie bezahlt wurde. Sie wird zerstört.",
+"image": "void_stone"
 },
 {
 "name": "Zurück zum Alltag",
 "cost_silver": 2,
 "cost_zynalith": 0,
 "victory_points": 0,
-"description": "Konter: Verhindere ein Event. Es wird zerstört."
+"description": "Konter: Verhindere ein Event. Es wird zerstört.",
+"image": "mill"
 },
 {
 "name": "Versteck",
 "cost_silver": 2,
 "cost_zynalith": 0,
 "victory_points": 0,
-"description": "Konter: Verhindere eine Schadensaktion an dir."
+"description": "Konter: Verhindere eine Schadensaktion an dir.",
+"image": "hut"
 },
 ]
 
