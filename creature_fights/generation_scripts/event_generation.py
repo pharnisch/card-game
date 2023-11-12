@@ -8,11 +8,13 @@ data = [
 },
 {
 "name": "Elfen-Fürst",
-"description": "Alle Spieler ohne Zynalith, erhalten 1 Zynalith."
+"description": "Alle Spieler ohne Zynalith, erhalten 1 Zynalith.",
+"image": "elfen_fuerst"
 },
 {
 "name": "Menschen-König",
-"description": "Alle Spieler mit mindestens 5 Silber, erhalten 3 Silber."
+"description": "Alle Spieler mit mindestens 5 Silber, erhalten 3 Silber.",
+"image": "menschen_koenig"
 },
 {
 "name": "Bettler",
@@ -21,15 +23,18 @@ data = [
 },
 {
 "name": "Instabiles Naturphänomen",
-"description": "Alle Helden erhalten so viel Schaden wie sie an Zynalith besitzen."
+"description": "Alle Helden erhalten so viel Schaden wie sie an Zynalith besitzen.",
+"image": "magic_storm"
 },
 {
 "name": "Rost",
-"description": "Das/die Wesen mit dem höchsten ATK-Wert wird zerstört."
+"description": "Das/die Wesen mit dem höchsten ATK-Wert wird zerstört.",
+"image": "rost"
 },
 {
 "name": "Zeitkrümmung",
-"description": "Alle Sofort-Effekte können erneut ausgeführt werden, beginnend beim aktiven Spieler, in beliebiger Reihenfolge unabhängig vom INIT-Wert."
+"description": "Alle Sofort-Effekte können erneut ausgeführt werden, beginnend beim aktiven Spieler, in beliebiger Reihenfolge unabhängig vom INIT-Wert.",
+"image": "zeitkruemmung"
 }
 ]
 

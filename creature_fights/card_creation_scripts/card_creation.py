@@ -190,7 +190,7 @@ class Card:
         return image
 
     def add_image(self, image):
-        if "image" in self.data:
+        if "image" in self.data and self.data["image"] != "":
             im2 = Image.open(f'../../assets/{self.data["image"]}.png')
         else:
             im2 = Image.open('../../assets/empty.png')
@@ -206,7 +206,7 @@ class Card:
         return image
 
     def add_image_cropped(self, image):
-        if "image" in self.data:
+        if "image" in self.data and self.data["image"] != "":
             im2 = Image.open(f'../../assets/{self.data["image"]}.png')
         else:
             im2 = Image.open('../../assets/empty.png')
@@ -327,12 +327,6 @@ if False:
 
 
 
-    with open("../card_data/equipment_and_spells", "r") as f:
-        content = f.read()
-        content = json.loads(content)
-        for idx, card_data in enumerate(content):
-            card = Card(f"equipment_and_spells-{idx}", card_data)
-            card.generate_equipment_and_spells()
 
     with open("../card_data/interrupts", "r") as f:
         content = f.read()
@@ -359,3 +353,10 @@ with open("../card_data/events", "r") as f:
     for idx, card_data in enumerate(content):
         card = Card(f"event-{idx}", card_data)
         card.generate_event()
+
+with open("../card_data/equipment_and_spells", "r") as f:
+    content = f.read()
+    content = json.loads(content)
+    for idx, card_data in enumerate(content):
+        card = Card(f"equipment_and_spells-{idx}", card_data)
+        card.generate_equipment_and_spells()

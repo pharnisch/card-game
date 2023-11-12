@@ -7,7 +7,8 @@ data = [
 "cost_zynalith": 1,
 "victory_points": 0,
 "type": "spell",
-"description": "Sofort: Erhalte 3 Zynalith."
+"description": "Sofort: Erhalte 3 Zynalith.",
+"image": "magic_puzzle"
 },
 {
 "name": "Aderlass",
@@ -15,7 +16,8 @@ data = [
 "cost_zynalith": 1,
 "victory_points": 0,
 "type": "spell",
-"description": "Kampf: -1 HP (Spieler oder dieses Wesen) und erhalte 1 Zynalith."
+"description": "Kampf: -1 HP (Spieler oder dieses Wesen) und erhalte 1 Zynalith.",
+"image": "bloody_sword"
 },
 {
 "name": "Gedankenkontrolle",
@@ -23,7 +25,8 @@ data = [
 "cost_zynalith": 3,
 "victory_points": 0,
 "type": "spell",
-"description": "Sofort: Übernehme die Kontrolle über ein gegnerisches Wesen."
+"description": "Sofort: Übernehme die Kontrolle über ein gegnerisches Wesen.",
+"image": "insane_human"
 },
 {
 "name": "Reinigung",
@@ -31,7 +34,8 @@ data = [
 "cost_zynalith": 2,
 "victory_points": 0,
 "type": "spell",
-"description": "Kampf: Zerstöre eine Eigenschafts-Karte von einem gegnerischen Wesen."
+"description": "Kampf: Zerstöre eine Eigenschafts-Karte von einem gegnerischen Wesen.",
+"image": "beam_3"
 },
 {
 "name": "Massenbannung",
@@ -39,7 +43,8 @@ data = [
 "cost_zynalith": 1,
 "victory_points": 0,
 "type": "spell",
-"description": "Sofort: Alle Eigenschafts-Karten aller Spieler gehen auf die Hand ihres Besitzers zurück."
+"description": "Sofort: Alle Eigenschafts-Karten aller Spieler gehen auf die Hand ihres Besitzers zurück.",
+"image": "beam_5"
 },
 {
 "name": "Zerquetschen",
@@ -47,7 +52,8 @@ data = [
 "cost_zynalith": 2,
 "victory_points": 0,
 "type": "spell",
-"description": "Sofort: Zerstöre von ALLEN Spielern die zwei äußersten Wesen."
+"description": "Sofort: Zerstöre von ALLEN Spielern die zwei äußersten Wesen.",
+"image": "stones"
 },
 {
 "name": "Opfer-Ritual",
@@ -55,7 +61,8 @@ data = [
 "cost_zynalith": 2,
 "victory_points": 0,
 "type": "spell",
-"description": "Sofort: Zerstöre ein eigenes Wesen und erhalte die doppelten Kosten zurück."
+"description": "Sofort: Zerstöre ein eigenes Wesen und erhalte die doppelten Kosten zurück.",
+"image": "sacrifice"
 },
 {
 "name": "Kometen-Hagel",
@@ -63,7 +70,8 @@ data = [
 "cost_zynalith": 2,
 "victory_points": 1,
 "type": "spell",
-"description": "Kampf: Wirf beliebig viele Karten von deiner Hand ab und verursache allen Mitspielern Schaden entsprechend der Anzahl."
+"description": "Kampf: Wirf beliebig viele Karten von deiner Hand ab und verursache allen Mitspielern Schaden entsprechend der Anzahl.",
+"image": "fire_comets"
 },
 {
 "name": "Schutz-Zauber",
@@ -71,7 +79,8 @@ data = [
 "cost_zynalith": 2,
 "victory_points": 0,
 "type": "spell",
-"description": "Passiv: Dieses Wesen kann immer nur jeweils 1 Schaden erleiden."
+"description": "Passiv: Dieses Wesen kann immer nur jeweils 1 Schaden erleiden.",
+"image": "magic_shield"
 },
 {
 "name": "Feuerball",
@@ -79,7 +88,8 @@ data = [
 "cost_zynalith": 1,
 "victory_points": 0,
 "type": "spell",
-"description": "Sofort: Füge einem Spieler 4 Schaden zu."
+"description": "Sofort: Füge einem Spieler 4 Schaden zu.",
+"image": "fireball"
 },
 {
 "name": "Funke",
@@ -87,7 +97,8 @@ data = [
 "cost_zynalith": 1,
 "victory_points": 0,
 "type": "spell",
-"description": "Kampf: Füge einem Spieler oder Wesen 1 Schaden zu."
+"description": "Kampf: Füge einem Spieler oder Wesen 1 Schaden zu.",
+"image": "funke"
 },
 {
 "name": "Verjüngung",
@@ -95,7 +106,8 @@ data = [
 "cost_zynalith": 1,
 "victory_points": 0,
 "type": "spell",
-"description": "Kampf: Heile einen Spieler oder Wesen um 1 HP."
+"description": "Kampf: Heile einen Spieler oder Wesen um 1 HP.",
+"image": "enchanted_leaf_3"
 },
 {
 "name": "Erdbeben",
@@ -103,7 +115,8 @@ data = [
 "cost_zynalith": 4,
 "victory_points": 2,
 "type": "spell",
-"description": "Spielende: Füge ALLEN Spielern 8 Schaden zu."
+"description": "Spielende: Füge ALLEN Spielern 8 Schaden zu.",
+"image": "erdbeben"
 },
 {
 "name": "Ausgeglichene Magie",
@@ -111,7 +124,8 @@ data = [
 "cost_zynalith": 4,
 "victory_points": 3,
 "type": "spell",
-"description": "Sofort: Setze alle Spieler auf 15 HP."
+"description": "Sofort: Setze alle Spieler auf 15 HP.",
+"image": "balanced_magic"
 },
 {
 "name": "Federleichter Flug",
@@ -119,7 +133,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "spell",
-"description": "Sofort: Gebe ein Wesen auf die Hand des Spielers zurück samt Zusatzkarten, er erhält aber nur die Kosten des Wesens erstattet."
+"description": "Sofort: Gebe ein Wesen auf die Hand des Spielers zurück samt Zusatzkarten, er erhält aber nur die Kosten des Wesens erstattet.",
+"image": "magic_bird"
 },
 {
 "name": "Heilender Nebel",
@@ -127,7 +142,8 @@ data = [
 "cost_zynalith": 1,
 "victory_points": 0,
 "type": "spell",
-"description": "Kampf: Heile die beiden Wesen neben diesem um 1."
+"description": "Kampf: Heile die beiden Wesen neben diesem um 1.",
+"image": "fog_green"
 },
 {
 "name": "Dimensionsriss",
@@ -135,7 +151,8 @@ data = [
 "cost_zynalith": 4,
 "victory_points": 3,
 "type": "spell",
-"description": "Spielende: Erhalte so viel Zynalith wie du an Magiewesen besitzt."
+"description": "Spielende: Erhalte so viel Zynalith wie du an Magiewesen besitzt.",
+"image": "beam_6"
 },
 {
 "name": "Endloses Leben",
@@ -143,7 +160,8 @@ data = [
 "cost_zynalith": 5,
 "victory_points": 0,
 "type": "spell",
-"description": "Tod: Ersetze dieses Wesen mit dem nächsten Wesen des Nachziehstapels. Übernehme alle vorherigen Zusatzkarten, inklusive diesem Zauber."
+"description": "Tod: Ersetze dieses Wesen mit dem nächsten Wesen des Nachziehstapels. Übernehme alle vorherigen Zusatzkarten, inklusive diesem Zauber.",
+"image": "enchanted_leaf_1"
 },
 {
 "name": "Wandelnder Kristall",
@@ -151,7 +169,8 @@ data = [
 "cost_zynalith": 5,
 "victory_points": 0,
 "type": "spell",
-"description": "Tod: Erhalte 10 Zynalith."
+"description": "Tod: Erhalte 10 Zynalith.",
+"image": "magic_crystal"
 },
 {
 "name": "Arkaner Sturm",
@@ -159,7 +178,8 @@ data = [
 "cost_zynalith": 1,
 "victory_points": 0,
 "type": "spell",
-"description": "Sofort: Alle müssen Karten abwerfen sodass sie maximal noch 2 Karten auf der Hand haben."
+"description": "Sofort: Alle müssen Karten abwerfen sodass sie maximal noch 2 Karten auf der Hand haben.",
+"image": "arcane_storm"
 },
 {
 "name": "Apokalypse",
@@ -167,7 +187,8 @@ data = [
 "cost_zynalith": 2,
 "victory_points": 0,
 "type": "spell",
-"description": "Passiv: Das Spiel endet nach der 4. Runde."
+"description": "Passiv: Das Spiel endet nach der 4. Runde.",
+"image": "apocalypse"
 },
 
 
@@ -178,7 +199,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Sofort: Ziehe eine Karte."
+"description": "Sofort: Ziehe eine Karte.",
+"image": ""
 },
 {
 "name": "Wunschbrunnen",
@@ -186,7 +208,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 1,
 "type": "equipment",
-"description": "Kampf: Ziehe eine Karte."
+"description": "Kampf: Ziehe eine Karte.",
+"image": ""
 },
 {
 "name": "Minenwerkzeug",
@@ -194,7 +217,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Kampf: Erhalte 1 Zynalith."
+"description": "Kampf: Erhalte 1 Zynalith.",
+"image": ""
 },
 {
 "name": "Lupe",
@@ -202,7 +226,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Sofort: Erhalte 1 Zynalith."
+"description": "Sofort: Erhalte 1 Zynalith.",
+"image": ""
 },
 {
 "name": "Banner",
@@ -210,7 +235,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Sofort: Sturmangriff."
+"description": "Sofort: Sturmangriff.",
+"image": ""
 },
 {
 "name": "Rostige Klinge",
@@ -218,7 +244,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 1,
 "type": "equipment",
-"description": "Kampf: Gegnerwesen der Linie verlieren 1 HP."
+"description": "Kampf: Gegnerwesen der Linie verlieren 1 HP.",
+"image": ""
 },
 {
 "name": "Krone",
@@ -226,7 +253,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 3,
 "type": "equipment",
-"description": ""
+"description": "",
+"image": ""
 },
 {
 "name": "Brüchiger Talisman des Schutzes",
@@ -234,7 +262,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Kampf: Falls dieses Wesen einen Kampf verlieren sollte, erhältst du in diesem Kampf keinen Schaden - zerstöre dann außerdem diese Ausrüstungskarte."
+"description": "Kampf: Falls dieses Wesen einen Kampf verlieren sollte, erhältst du in diesem Kampf keinen Schaden - zerstöre dann außerdem diese Ausrüstungskarte.",
+"image": ""
 },
 {
 "name": "Schurken-Rucksack",
@@ -242,7 +271,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Sofort: Lege eine Ausrüstungskarte von einem gegnerischen Wesen unter ein eigenes."
+"description": "Sofort: Lege eine Ausrüstungskarte von einem gegnerischen Wesen unter ein eigenes.",
+"image": ""
 },
 {
 "name": "Giftphiole",
@@ -250,7 +280,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Sofort: Zerstöre ein Wesen mit ATK-Wert >= 7 (insgesamt)."
+"description": "Sofort: Zerstöre ein Wesen mit ATK-Wert >= 7 (insgesamt).",
+"image": ""
 },
 {
 "name": "Erste-Hilfe-Set",
@@ -258,7 +289,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Kampf: Heile dieses Wesen voll."
+"description": "Kampf: Heile dieses Wesen voll.",
+"image": ""
 },
 {
 "name": "Poesie-Band",
@@ -266,7 +298,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 2,
 "type": "equipment",
-"description": "Spielende: Erhalte so viel Zynalith wie verbleibende HP auf diesem Wesen sind."
+"description": "Spielende: Erhalte so viel Zynalith wie verbleibende HP auf diesem Wesen sind.",
+"image": ""
 },
 {
 "name": "Kleine Landkarte",
@@ -274,7 +307,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 2,
 "type": "equipment",
-"description": "Passiv: Du kannst auch die Position deiner Wesen mit einem INIT-Unterschied von bis zu 1 vertauschen."
+"description": "Passiv: Du kannst auch die Position deiner Wesen mit einem INIT-Unterschied von bis zu 1 vertauschen.",
+"image": ""
 },
 {
 "name": "Große Landkarte",
@@ -282,7 +316,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 2,
 "type": "equipment",
-"description": "Passiv: Du kannst auch die Position deiner Wesen mit einem INIT-Unterschied von bis zu 2 vertauschen."
+"description": "Passiv: Du kannst auch die Position deiner Wesen mit einem INIT-Unterschied von bis zu 2 vertauschen.",
+"image": ""
 },
 {
 "name": "Gezinkte Würfel",
@@ -290,7 +325,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Sofort: Vertausche von zwei Wesen die Magiekarten mit selben Kosten."
+"description": "Sofort: Vertausche von zwei Wesen die Magiekarten mit selben Kosten.",
+"image": ""
 },
 {
 "name": "Diplomatie-Urkunde",
@@ -298,7 +334,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 1,
 "type": "equipment",
-"description": "Sofort: Gebe allen Mitspielern 3 Silber von dir, danach heilen sich alle Spieler voll."
+"description": "Sofort: Gebe allen Mitspielern 3 Silber von dir, danach heilen sich alle Spieler voll.",
+"image": ""
 },
 {
 "name": "Trauer-Kasse",
@@ -306,7 +343,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 1,
 "type": "equipment",
-"description": "Trauer: Erhalte 2 Silber."
+"description": "Trauer: Erhalte 2 Silber.",
+"image": ""
 },
 {
 "name": "Gewürze",
@@ -314,7 +352,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Trauer: Heile die HP von dir oder diesem Wesen um 2."
+"description": "Trauer: Heile die HP von dir oder diesem Wesen um 2.",
+"image": ""
 },
 {
 "name": "Spurt-Sandalen",
@@ -322,7 +361,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Passiv: Du kannst pro Zug 1 bis 2 Hauptaktionen durchführen."
+"description": "Passiv: Du kannst pro Zug 1 bis 2 Hauptaktionen durchführen.",
+"image": ""
 },
 {
 "name": "Grab-Schaufel",
@@ -330,7 +370,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Trauer: Ziehe eine Karte."
+"description": "Trauer: Ziehe eine Karte.",
+"image": ""
 },
 {
 "name": "Leiser Dolch",
@@ -338,7 +379,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Trauer: Erhalte 1 Zynalith."
+"description": "Trauer: Erhalte 1 Zynalith.",
+"image": ""
 },
 {
 "name": "Kriegserklärung",
@@ -346,7 +388,8 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Passiv: Es gibt eine zusätzliche 6. Runde (außer bei einer Apokalypse)."
+"description": "Passiv: Es gibt eine zusätzliche 6. Runde (außer bei einer Apokalypse).",
+"image": ""
 },
 ]
 
