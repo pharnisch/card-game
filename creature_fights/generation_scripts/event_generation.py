@@ -18,7 +18,7 @@ data = [
 },
 {
 "name": "Bettler",
-"description": "Alle mit mindestens einem Silber geben eines ab.",
+"description": "Alle mit mindestens einem Silber werfen eines ab.",
 "image": "hands_full_of_silver"
 },
 {

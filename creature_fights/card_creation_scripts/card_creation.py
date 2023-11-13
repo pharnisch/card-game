@@ -319,44 +319,28 @@ if False:
     pass
 
 
-    with open("../card_data/creatures", "r") as f:
-        content = f.read()
-        content = json.loads(content)
-        for idx, card_data in enumerate(content):
-            card = Card(f"creature-{idx}", card_data)
-            card.generate_creature()
+with open("../card_data/creatures", "r") as f:
+    content = f.read()
+    content = json.loads(content)
+    for idx, card_data in enumerate(content):
+        card = Card(f"creature-{idx}", card_data)
+        card.generate_creature()
+
+with open("../card_data/events", "r") as f:
+    content = f.read()
+    content = json.loads(content)
+    for idx, card_data in enumerate(content):
+        card = Card(f"event-{idx}", card_data)
+        card.generate_event()
+
+with open("../card_data/equipment_and_spells", "r") as f:
+    content = f.read()
+    content = json.loads(content)
+    for idx, card_data in enumerate(content):
+        card = Card(f"equipment_and_spells-{idx}", card_data)
+        card.generate_equipment_and_spells()
 
 
-
-
-
-
-
-
-
-
-
-
-    with open("../card_data/events", "r") as f:
-        content = f.read()
-        content = json.loads(content)
-        for idx, card_data in enumerate(content):
-            card = Card(f"event-{idx}", card_data)
-            card.generate_event()
-
-    with open("../card_data/equipment_and_spells", "r") as f:
-        content = f.read()
-        content = json.loads(content)
-        for idx, card_data in enumerate(content):
-            card = Card(f"equipment_and_spells-{idx}", card_data)
-            card.generate_equipment_and_spells()
-
-    with open("../card_data/interrupts", "r") as f:
-        content = f.read()
-        content = json.loads(content)
-        for idx, card_data in enumerate(content):
-            card = Card(f"interrupt-{idx}", card_data)
-            card.generate_interrupt()
 
 with open("../card_data/buffs", "r") as f:
     content = f.read()
@@ -364,3 +348,10 @@ with open("../card_data/buffs", "r") as f:
     for idx, card_data in enumerate(content):
         card = Card(f"buff-{idx}", card_data)
         card.generate_buff()
+
+with open("../card_data/interrupts", "r") as f:
+    content = f.read()
+    content = json.loads(content)
+    for idx, card_data in enumerate(content):
+        card = Card(f"interrupt-{idx}", card_data)
+        card.generate_interrupt()

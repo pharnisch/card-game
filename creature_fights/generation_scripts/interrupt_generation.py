@@ -6,7 +6,7 @@ data = [
 "cost_silver": 0,
 "cost_zynalith": 1,
 "victory_points": 0,
-"description": "Konter: Verhindere das Ausspielen einer Magie-Karte, nachdem sie bezahlt wurde. Sie wird zerstört.",
+"description": "Konter: Verhindere das Ausspielen einer Magie-Karte, nachdem sie bezahlt wurde. Sie wird zerstört. Der andere Spieler erhält diese \"Leerstein: Magie annulieren\"-Karte auf die Hand.",
 "image": "void_stone"
 },
 {

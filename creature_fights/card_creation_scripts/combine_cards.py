@@ -4,15 +4,17 @@ import os
 from fpdf import FPDF
 
 # imagelist is the list with all image filenames
-
-
-
-images = [Image.open(r"../cards/buff-0.png"), Image.open(r"../cards/buff-1.png"), Image.open(r"../cards/buff-2.png")]
-images = [r"../cards/buff-0.png",r"../cards/buff-1.png", r"../cards/buff-2.png", r"../cards/buff-3.png", r"../cards/buff-4.png"]
 images = os.listdir("../cards/")
-#import glob
-#mylist = [f for f in glob.glob("../cards/*.png")]
-#print(mylist)
+tmp = []
+for image in images:
+    if "buff" in image:
+        tmp.append(image)
+        tmp.append(image)
+        tmp.append(image)
+    else:
+        tmp.append(image)
+
+images = tmp
 
 pdf = FPDF("L", "mm", "a4")
 pdf.add_page()

@@ -22,7 +22,7 @@ data = [
 {
 "name": "Gedankenkontrolle",
 "cost_silver": 0,
-"cost_zynalith": 3,
+"cost_zynalith": 5,
 "victory_points": 0,
 "type": "spell",
 "description": "Sofort: Übernehme die Kontrolle über ein gegnerisches Wesen.",
@@ -262,7 +262,7 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Kampf: Falls dieses Wesen einen Kampf verlieren sollte, erhältst du in diesem Kampf keinen Schaden - zerstöre dann außerdem diese Ausrüstungskarte.",
+"description": "Kampf: Falls dieses Wesen einen Kampf verlieren sollte, erhältst du in diesem Kampf keinen Schaden - zerstöre dann außerdem diese Ausrüstungs-Karte.",
 "image": "talisman_1"
 },
 {
@@ -271,7 +271,7 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Sofort: Lege eine Ausrüstungskarte von einem gegnerischen Wesen unter ein eigenes.",
+"description": "Sofort: Lege eine Eigenschafts-Karte von einem gegnerischen Wesen unter ein eigenes.",
 "image": "backpack"
 },
 {
