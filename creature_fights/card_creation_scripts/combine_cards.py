@@ -28,5 +28,5 @@ for _idx,  image in enumerate(images):
     print(f"{row}, {column} ({idx})")
 
 
-    pdf.image("../cards/" + image,column*(63.5+2)+2,row*(88.9+2)+2,63.5,88.9) #
+    pdf.image("../cards/" + image,column*(63.5+2)+10,row*(88.9+2)+10,63.5,88.9) #
 pdf.output("yourfile.pdf", "F")
