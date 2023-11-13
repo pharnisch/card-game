@@ -47,7 +47,7 @@ class Creature:
 
     def spend_random_points(self):
         per_cent = random.randrange(0, 100)
-        if per_cent < 10:
+        if per_cent < 5:
             if self.item_points >= 2 * ITEM_POINTS_SCALE:
                 self.data["victory_points"] += 1
                 self.item_points -= 2 * ITEM_POINTS_SCALE
