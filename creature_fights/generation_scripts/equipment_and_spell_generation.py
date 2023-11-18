@@ -391,6 +391,25 @@ data = [
 "description": "Passiv: Es gibt eine zusätzliche 6. Runde (außer bei einer Apokalypse).",
 "image": "crow"
 },
+# neu
+{
+"name": "Wertpapier",
+"cost_silver": 3,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Passiv: Dein nicht ausgegebenes Silber wird am Ende der Runde verdoppelt.",
+#"image": "crow"
+},
+{
+"name": "Blockade",
+"cost_silver": 4,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Kampf: Du kannst durch Niederlagen auf den beiden Linien neben dieser keinen direkten Schaden erleiden.",
+#"image": "crow"
+},
 ]
 
 with open("../card_data/equipment_and_spells", "w") as f:

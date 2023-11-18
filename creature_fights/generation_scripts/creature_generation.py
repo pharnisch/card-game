@@ -26,6 +26,7 @@ class Creature:
         self.data["cost_silver"] = random.randrange(MIN_COST, MAX_COST+1)
 
         self.item_points = self.data["cost_silver"] * ITEM_POINTS_SCALE
+        print(f'silver {self.data["cost_silver"]}, ip: {self.item_points}')
 
         if self.data["cost_silver"] >= 3:
             per_cent = random.randrange(0, 100)
@@ -82,6 +83,8 @@ class Creature:
                 self.data["attack"] += 1
                 self.item_points -= current_cost * ITEM_POINTS_SCALE
                 print(f"bought one ATK for {current_cost} silver")
+        print(f'remaining ip: {self.item_points}')
+
 
     def set_random_name(self):
         volk = ["Oger", "Elfen", "Zwerge", "Menschen", "Goblins", "Gar'daa", "Lichtwesen", "Dämonen"]
@@ -94,8 +97,7 @@ class Creature:
         return json.dumps(self.data)
 
 
-
-
 creatures = [Creature().data for i in range(AMOUNT)]
-with open("../card_data/creatures", "w") as f:
-    f.write(json.dumps(creatures))
+#with open("../card_data/creatures", "w") as f:
+#    f.write(json.dumps(creatures))
+#
