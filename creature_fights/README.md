@@ -17,6 +17,8 @@ Es gibt einen Stapel mit Zusatzkarten und Zusatz-Events.
 Von beiden Stapeln werden 5 gezogen und als Auslage bereitgehalten.
 Sobald Events gezogen werden, werden dieses sofort ausgeführt.
 
+Es muss pro Zug eines Spielers immer genau eine Hauptaktion von ihm durchgeführt werden + beliebig viele Nebenaktionen.
+
 Hauptaktionen je Zug innerhalb einer Runde:
 - Karte für 1s von Auslage oder Deck auf Hand nehmen
 - Karte aus Hand oder Auslage bezahlen und ausspielen
@@ -24,15 +26,23 @@ Hauptaktionen je Zug innerhalb einer Runde:
 - Karte aus Hand abwerfen, um eine Reihe der Auslage neu zu ziehen
 - Passen für diese Runde
 
-Nebenaktionen:
+Nebenaktionen im eigenen Zug:
 - Position von eigenen Wesen vertauschen, welche selben INIT-Wert besitzen
-- Konter ausspielen (von der Hand oder Auslage)
+- Zwischen Angriffs und ver
 - Zynalith für je 2s verkaufen
+
+Nebenaktionen in beliebigem Zug:
+- Konter ausspielen (von der Hand oder Auslage)
+
 
 Zusatzkarten:
 - Buffs/Eigenschaften
 - Zauber/Magie
 - Gegenstände/Ausrüstung
+
+
+Spielerverteidigung:
+- für jedes Wesen in Verteidigungshaltung erhält der Spieler 1 Verteidigung (also max 5, 1 pro slot), was erleideten Schaden verringert.
 
 All diese Karten können nicht mehr ausgetauscht werden bei einem Wesen, also auch ein Sofort-Zauber bleibt auf einem Wesen gebunden, obwohl der Effekt (normalerweise) nicht mehr eintreten wird.
 
@@ -64,8 +74,8 @@ Keywords für Triggerzeitpunkt:
 - Gier: Nachdem eine Karte mit mindestens 12 Silber oder 4 Zynalith erworben wurde
 Keywords für Effekt:
 - Sturmangriff: Zusätzliche spontane Kampfrunde nur für diese Linie
-- Blutsaugen: Schaden, den dieses Wesen an gegnerischen Helden verursacht, heilt es den eigenen Helden
-
+- Blutsaugen: Schaden, den dieses Wesen (oder Spieler) an gegnerischen Helden verursacht, heilt es den eigenen Helden
+- Durchschlag: Ignoriert Rüstung von Wesen und Verteidigung von Spielern
 
 
 Sonstiges:
@@ -74,4 +84,3 @@ Sonstiges:
 Offene Ideen:
 - Zwei Fronten
 - Gesichtsloser Krieger 0/?/?/?, 1VP, 15Silber (erhält Werte des Wesens links neben diesem (ohne Zusatzkarten))
-- Unsicher, ob 5 oder doch 6-8 Runden (?) -> Effektidee: Apokalypse Es endet früher (schon nach 5 Runden, ansonsten normal nach 7 z.B.). Oder normal 5 Runden und Apokalypse: 4 Runden, Kriegserklärung: 6 Runden (Apokalypse > Kriegserklärung)

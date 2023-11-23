@@ -190,7 +190,69 @@ data = [
 "description": "Passiv: Das Spiel endet nach der 4. Runde.",
 "image": "apocalypse"
 },
-
+{
+"name": "Blizzard",
+"cost_silver": 0,
+"cost_zynalith": 2,
+"victory_points": 0,
+"type": "spell",
+"description": "Kampf: Füge einem Spieler 3 Durchschlag-Schaden zu.",
+#"image": "fireball"
+},
+{
+"name": "Nekromantie",
+"cost_silver": 0,
+"cost_zynalith": 2,
+"victory_points": 0,
+"type": "spell",
+"description": "Trauer: Heile einen Spieler oder Wesen um 3.",
+#"image": "fireball"
+},
+{
+"name": "Seuchen-Ausbruch",
+"cost_silver": 0,
+"cost_zynalith": 1,
+"victory_points": 0,
+"type": "spell",
+"description": "Trauer: ALLE Wesen erhalten 1 Durchschlag-Schaden.",
+#"image": "fireball"
+},
+{
+"name": "Wiedergeburt",
+"cost_silver": 0,
+"cost_zynalith": 5,
+"victory_points": 3,
+"type": "spell",
+"description": "Sofort: Heile einen Spieler voll.",
+#"image": "fireball"
+},
+{
+"name": "Segen von Laenalith",
+"cost_silver": 0,
+"cost_zynalith": 6,
+"victory_points": 3,
+"type": "spell",
+"description": "Sofort: [Sturmangriff]. Passiv: Dieses Wesen verursacht Durchschlag- und Blutsauger-Schaden.",
+#"image": "fireball"
+},
+{
+"name": "Komet der Götter",
+"cost_silver": 0,
+"cost_zynalith": 7,
+"victory_points": 1,
+"type": "spell",
+"description": "Sofort: Verursache 10 Schaden.",
+#"image": "fireball"
+},
+{
+"name": "Regen der Götter",
+"cost_silver": 0,
+"cost_zynalith": 3,
+"victory_points": 1,
+"type": "spell",
+"description": "Sofort: Verursache 5 mal 1 Durchschlag-Schaden oder Heilung.",
+#"image": "fireball"
+},
 
 
 {
@@ -407,7 +469,34 @@ data = [
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
-"description": "Kampf: Du kannst durch Niederlagen auf den beiden Linien neben dieser keinen direkten Schaden erleiden.",
+"description": "Passiv: Du kannst durch Niederlagen auf den beiden Linien neben dieser keinen direkten Schaden erleiden.",
+#"image": "crow"
+},
+{
+"name": "Reißende Armbrust",
+"cost_silver": 4,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Passiv: Dieses Wesen verursacht Durchschlag-Schaden.",
+#"image": "crow"
+},
+{
+"name": "Mael-Offiziers-Rüstung",
+"cost_silver": 9,
+"cost_zynalith": 0,
+"victory_points": 2,
+"type": "equipment",
+"description": "Sofort: Sturmangriff. Passiv: Dieses Wesen verursacht Durchschlag-Schaden. Ausrüstung/Eigenschaft: Erhalte 1 Silber.",
+#"image": "crow"
+},
+{
+"name": "Sprengstoff",
+"cost_silver": 5,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Tod: Falls von einem Wesen getötet, stirbt dieses.",
 #"image": "crow"
 },
 ]

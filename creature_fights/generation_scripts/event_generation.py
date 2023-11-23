@@ -35,6 +35,16 @@ data = [
 "name": "Zeitkrümmung",
 "description": "Alle Sofort-Effekte können erneut ausgeführt werden, beginnend beim aktiven Spieler, in beliebiger Reihenfolge unabhängig vom INIT-Wert.",
 "image": "zeitkruemmung"
+},
+{
+"name": "Elfen-Dynastie Brinth",
+"description": "Alle Spieler ziehen drei Karten vom Zusatz-Karten-Stapel.",
+"image": "elfen_stadt_briam"
+},
+{
+"name": "Untergang der Zivilisationen",
+"description": "Es findet eine spontane zusätzliche Kampfrunde statt.",
+"image": "verzauberte_gebaeude"
 }
 ]
 
