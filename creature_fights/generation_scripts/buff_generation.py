@@ -142,6 +142,11 @@ data = [
 "image": "angry_dwarve"
 },
 ]
+tmp = data
+data = []
+for i in tmp:
+    if "changed" in i and i["changed"] == True:
+        data.append(i)
 
 with open("../card_data/buffs", "w") as f:
     f.write(json.dumps(data))

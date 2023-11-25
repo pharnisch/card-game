@@ -28,7 +28,7 @@ Hauptaktionen je Zug innerhalb einer Runde:
 
 Nebenaktionen im eigenen Zug:
 - Position von eigenen Wesen vertauschen, welche selben INIT-Wert besitzen
-- Zwischen Angriffs und ver
+- Zwischen Angriffs und Verteidigungsposition wechseln (Verteidigungsposition: Karte nach hinten ziehen, Reihenfolge bleibt beibehalten, aber es nimmt somit nicht mehr am Kampf teil, sondern verteidigt den Spieler -> Kampf-Effekt triggert nicht)
 - Zynalith für je 2s verkaufen
 
 Nebenaktionen in beliebigem Zug:
@@ -72,10 +72,11 @@ Keywords für Triggerzeitpunkt:
 - Ausrüstung: Nachdem eine Ausrüstung ausgespielt wurde von Hand oder Auslage
 - Eigenschaft: Nachdem eine Eigenschaft ausgespielt wurde von Hand oder Auslage
 - Gier: Nachdem eine Karte mit mindestens 12 Silber oder 4 Zynalith erworben wurde
+- Verteidigung: Nachdem Spieler angegriffen wurde und ein Wesen von diesem Spieler verteidigt hat (nicht getriggert bei Durchschlag-Schaden)
 Keywords für Effekt:
 - Sturmangriff: Zusätzliche spontane Kampfrunde nur für diese Linie
 - Blutsaugen: Schaden, den dieses Wesen (oder Spieler) an gegnerischen Helden verursacht, heilt es den eigenen Helden
-- Durchschlag: Ignoriert Rüstung von Wesen und Verteidigung von Spielern
+- Durchschlag: Ignoriert Verteidigung von Spielern (Rüstung von Wesen wird bereits IMMER ignoriert von Effekten, wirkt nur im Kampf mit anderen Wesen)
 
 
 Sonstiges:
@@ -84,3 +85,4 @@ Sonstiges:
 Offene Ideen:
 - Zwei Fronten
 - Gesichtsloser Krieger 0/?/?/?, 1VP, 15Silber (erhält Werte des Wesens links neben diesem (ohne Zusatzkarten))
+- Statt jedes Monster hat 1 Verteidigung im seitlichen Modus, nach Kosten skalieren: 0-7: 0 Vert., 8-11: 1 Vert, 12-15: 2 Vert.

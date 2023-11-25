@@ -4,7 +4,7 @@ import os
 from fpdf import FPDF
 
 # imagelist is the list with all image filenames
-images = os.listdir("../cards/")
+images = os.listdir("../cards/new_and_not_printed_yet/")
 tmp = []
 for image in images:
     if "buff" in image:
@@ -30,5 +30,5 @@ for _idx,  image in enumerate(images):
     print(f"{row}, {column} ({idx})")
 
 
-    pdf.image("../cards/" + image,column*(63.5+2)+10,row*(88.9+2)+10,63.5,88.9) #
-pdf.output("yourfile.pdf", "F")
+    pdf.image("../cards/new_and_not_printed_yet/" + image,column*(63.5+2)+10,row*(88.9+2)+10,63.5,88.9) #
+pdf.output("new_cards.pdf", "F")

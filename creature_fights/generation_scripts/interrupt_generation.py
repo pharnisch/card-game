@@ -26,6 +26,11 @@ data = [
 "image": "hut"
 },
 ]
+tmp = data
+data = []
+for i in tmp:
+    if "changed" in i and i["changed"] == True:
+        data.append(i)
 
 with open("../card_data/interrupts", "w") as f:
     f.write(json.dumps(data))

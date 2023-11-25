@@ -45,8 +45,21 @@ data = [
 "name": "Untergang der Zivilisationen",
 "description": "Es findet eine spontane zusätzliche Kampfrunde statt.",
 "image": "verzauberte_gebaeude"
-}
+},
+{
+"name": "Steuer-Erklärung",
+"description": "Alle erhalten 5 Silber.",
+"image": "silver_coins",
+"changed": True,
+},
 ]
+
+tmp = data
+data = []
+for i in tmp:
+    if "changed" in i and i["changed"] == True:
+        data.append(i)
+
 
 with open("../card_data/events", "w") as f:
     f.write(json.dumps(data))

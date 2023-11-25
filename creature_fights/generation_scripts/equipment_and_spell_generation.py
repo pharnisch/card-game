@@ -8,7 +8,8 @@ data = [
 "victory_points": 0,
 "type": "spell",
 "description": "Sofort: Erhalte 3 Zynalith.",
-"image": "magic_puzzle"
+"image": "magic_puzzle",
+"changed": False,
 },
 {
 "name": "Aderlass",
@@ -197,7 +198,7 @@ data = [
 "victory_points": 0,
 "type": "spell",
 "description": "Kampf: Füge einem Spieler 3 Durchschlag-Schaden zu.",
-#"image": "fireball"
+"image": "blizzard"
 },
 {
 "name": "Nekromantie",
@@ -206,7 +207,7 @@ data = [
 "victory_points": 0,
 "type": "spell",
 "description": "Trauer: Heile einen Spieler oder Wesen um 3.",
-#"image": "fireball"
+"image": "necromantic1"
 },
 {
 "name": "Seuchen-Ausbruch",
@@ -214,8 +215,8 @@ data = [
 "cost_zynalith": 1,
 "victory_points": 0,
 "type": "spell",
-"description": "Trauer: ALLE Wesen erhalten 1 Durchschlag-Schaden.",
-#"image": "fireball"
+"description": "Trauer: ALLE Wesen erhalten 1 Schaden.",
+"image": "pandemic"
 },
 {
 "name": "Wiedergeburt",
@@ -224,7 +225,7 @@ data = [
 "victory_points": 3,
 "type": "spell",
 "description": "Sofort: Heile einen Spieler voll.",
-#"image": "fireball"
+"image": "circle2"
 },
 {
 "name": "Segen von Laenalith",
@@ -233,7 +234,7 @@ data = [
 "victory_points": 3,
 "type": "spell",
 "description": "Sofort: [Sturmangriff]. Passiv: Dieses Wesen verursacht Durchschlag- und Blutsauger-Schaden.",
-#"image": "fireball"
+"image": "circle1"
 },
 {
 "name": "Komet der Götter",
@@ -242,7 +243,7 @@ data = [
 "victory_points": 1,
 "type": "spell",
 "description": "Sofort: Verursache 10 Schaden.",
-#"image": "fireball"
+"image": "god_comet_1"
 },
 {
 "name": "Regen der Götter",
@@ -251,8 +252,30 @@ data = [
 "victory_points": 1,
 "type": "spell",
 "description": "Sofort: Verursache 5 mal 1 Durchschlag-Schaden oder Heilung.",
-#"image": "fireball"
+"image": "god_rain"
 },
+{
+"name": "Tiefgrüner Ozean: Heilende Woge",
+"cost_silver": 0,
+"cost_zynalith": 3,
+"victory_points": 1,
+"type": "spell",
+"description": "Kampf: Heile alle deine Wesen und dich selbst um 3.",
+"image": "green_water_whirl",
+"changed": True,
+},
+{
+"name": "Tiefgrüner Ozean: Reißender Sog",
+"cost_silver": 0,
+"cost_zynalith": 3,
+"victory_points": 0,
+"type": "spell",
+"description": "Kampf: Erhalte jeweils 1 Zynalith von den anderen Spielern.",
+"image": "green_water_wild",
+"changed": True,
+},
+
+
 
 
 {
@@ -461,7 +484,7 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Passiv: Dein nicht ausgegebenes Silber wird am Ende der Runde verdoppelt.",
-#"image": "crow"
+"image": "wertpapier"
 },
 {
 "name": "Blockade",
@@ -470,16 +493,16 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Passiv: Du kannst durch Niederlagen auf den beiden Linien neben dieser keinen direkten Schaden erleiden.",
-#"image": "crow"
+"image": "two_shields"
 },
 {
-"name": "Reißende Armbrust",
+"name": "Piraten-Kanone",
 "cost_silver": 4,
 "cost_zynalith": 0,
 "victory_points": 0,
 "type": "equipment",
 "description": "Passiv: Dieses Wesen verursacht Durchschlag-Schaden.",
-#"image": "crow"
+"image": "canon"
 },
 {
 "name": "Mael-Offiziers-Rüstung",
@@ -488,7 +511,7 @@ data = [
 "victory_points": 2,
 "type": "equipment",
 "description": "Sofort: Sturmangriff. Passiv: Dieses Wesen verursacht Durchschlag-Schaden. Ausrüstung/Eigenschaft: Erhalte 1 Silber.",
-#"image": "crow"
+"image": "armor2"
 },
 {
 "name": "Sprengstoff",
@@ -497,9 +520,63 @@ data = [
 "victory_points": 0,
 "type": "equipment",
 "description": "Tod: Falls von einem Wesen getötet, stirbt dieses.",
-#"image": "crow"
+"image": "dynamite"
+},
+{
+"name": "Silberpfeile",
+"cost_silver": 2,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Kampf: Werfe bis zu 3 Silber ab und verursache so viel Schaden an einem Spieler.",
+"image": "silver_arrows"
+},
+{
+"name": "Glücksbringer-Ring",
+"cost_silver": 7,
+"cost_zynalith": 0,
+"victory_points": 2,
+"type": "equipment",
+"description": "Passiv: Dein maximales Spielerleben erhöht sich um 10.",
+"image": "ring"
+},
+{
+"name": "Göttliches Relikt",
+"cost_silver": 5,
+"cost_zynalith": 0,
+"victory_points": 2,
+"type": "equipment",
+"description": "Passiv: Du kannst beliebig viel Zynalith für je 3 Silber kaufen oder verkaufen.",
+"image": "religion",
+"changed": False,
+},
+{
+"name": "Gut gestimmte Violine",
+"cost_silver": 6,
+"cost_zynalith": 0,
+"victory_points": 1,
+"type": "equipment",
+"description": "Gier/Event/Zauber: Erhalte 4 Silber.",
+"image": "violine",
+"changed": True,
+},
+{
+"name": "Dornen-Panzer",
+"cost_silver": 4,
+"cost_zynalith": 0,
+"victory_points": 0,
+"type": "equipment",
+"description": "Sofort: Sturmangriff. Verteidigung: Verursache 1 Schaden.",
+"image": "defense3",
+"changed": True,
 },
 ]
+
+tmp = data
+data = []
+for i in tmp:
+    if "changed" in i and i["changed"] == True:
+        data.append(i)
 
 with open("../card_data/equipment_and_spells", "w") as f:
     f.write(json.dumps(data))
