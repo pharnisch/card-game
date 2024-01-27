@@ -5,6 +5,7 @@ Außerdem mit 20 Silber und 3 Zynalith Startkapital.
 Es gibt 5 Runden mit wechselndem Startspieler im Uhrzeigersinn mit je einer Hauptaktion. Zu Beginn einer jeden Runde erhält jeder Spieler 10 Silber.
 Man hat 5 Slots für Wesen.
 - Runde 0: jeder zieht 3 Karten von Deck oder Auslage (reihum jeweils eine Karte), P_i beginnt
+VARIANTE: jede Runde zufällige Resourcen statt 10s, z.B. 10s, 5s+2z, 4z, 2karten+2z+2s, ...
 - Runde 1: 5 Slots, 20 Silber, 3 Zynalith, P_i+1 beginnt, Auslage erneuert
 - Runde 2: 5 Slots, 10 Silber, P_i+2 beginnt, Auslage erneuert
 - Runde 3: 5 Slots, 10 Silber, P_i+3 beginnt, Auslage erneuert
