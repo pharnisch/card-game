@@ -3,13 +3,15 @@ Außerdem mit 20 Silber und 3 Zynalith Startkapital.
 
 
 Es gibt 5 Runden mit wechselndem Startspieler im Uhrzeigersinn mit je einer Hauptaktion. Zu Beginn einer jeden Runde erhält jeder Spieler 10 Silber.
-Man beginnt mit nur 3 Slots für Wesen und erhält bei bestimmten Runden neue Slots:
-- Runde 0: jeder zieht 5 Karten von Deck oder Auslage (reihum jeweils eine Karte), P_i beginnt
-- Runde 1: 3 Slots, 10 Silber, P_i+1 beginnt, Auslage erneuert
-- Runde 2: 4 Slots, 10 Silber, P_i+2 beginnt, Auslage erneuert
+Man hat 5 Slots für Wesen.
+- Runde 0: jeder zieht 3 Karten von Deck oder Auslage (reihum jeweils eine Karte), P_i beginnt
+VARIANTE: jede Runde zufällige Resourcen statt 10s, z.B. 10s, 5s+2z, 4z, 2karten+2z+2s, ...
+- Runde 1: 5 Slots, 20 Silber, 3 Zynalith, P_i+1 beginnt, Auslage erneuert
+- Runde 2: 5 Slots, 10 Silber, P_i+2 beginnt, Auslage erneuert
 - Runde 3: 5 Slots, 10 Silber, P_i+3 beginnt, Auslage erneuert
 - Runde 4: 5 Slots, 10 Silber, P_i+4 beginnt, Auslage erneuert
 - Runde 5: 5 Slots, 10 Silber, P_i+5 beginnt, Auslage erneuert
+Variante: Anstatt dass es bei Runde 2-5 immer nur 10S gibt, könnte dies auch zufällig sein und ggf eine Kombination von unterschiedlich viel oder wenig Silber und/oder Zynalith sein... (10S,0Z), (7s,1Z), (4S,2Z), (1S,3Z), (0S,4Z),.....
 
 Jede Runde wird die Auslage refresht:
 Es gibt einen Stapel mit Wesen (und Wesen-Events).
@@ -22,7 +24,7 @@ Es muss pro Zug eines Spielers immer genau eine Hauptaktion von ihm durchgeführ
 Hauptaktionen je Zug innerhalb einer Runde:
 - Karte für 1s von Auslage oder Deck auf Hand nehmen
 - Karte aus Hand oder Auslage bezahlen und ausspielen
-- Eigenes Wesen aus Front verbannen und Kosten-1 (kann nicht unter 0 gehen) zurückerhalten (nicht die Kosten von Zusatzkarten)
+- Eigenes Wesen aus Front verbannen und Kosten-2 (kann nicht unter 0 gehen) zurückerhalten (nicht die Kosten von Zusatzkarten)
 - Karte aus Hand abwerfen, um eine Reihe der Auslage neu zu ziehen
 - Passen für diese Runde
 
@@ -55,8 +57,8 @@ Ansonsten werden 5 Runden gespielt und es gewinnt der von den noch lebenden Spie
 Kampf:
 Die Wesen müssen in Reihenfolge der INIT-Werte platziert werden (Die Zahl nach Effekten zählt).
 Absteigend dieser Reihenfolge, schickt jeder Spieler ein Wesen in den Kampf. Diese Kampf-Linie wertet aus, wer den Kampf für sich entscheidet: Das Wesen mit dem höchsten ATK-Wert. Anschließend verlieren alle weiteren Wesen diesen Wert an HP (minus ihres DEF-Wertes). Bei 0 HP sterben sie. Überschüssiger Schaden wird an den Spieler weitergeleitet.
-Beispiel: Es gewinnt ein Wesen in der Linie mit 3 ATK. Ein anderes Wesen der Linie hat 1 DEF und 1 verbleibendes HP (Marker auf der Karte). Es erhält 3-1=2 Schaden. Verliert das letzte HP, wird zerstört und den verbleibenden 1 Schadenspunkt erhält der Spieler, welcher zudem auch die Kosten des Wesens zurückerhält (- 1 Silber, kann nicht unter 0 gehen).
-Wenn ein Wesen zerstört wird, erhält der Spieler die Kosten des Wesens (-1, kann nicht unter 0 gehen) zurück (aber nicht der Zusatzkarten).
+Beispiel: Es gewinnt ein Wesen in der Linie mit 3 ATK. Ein anderes Wesen der Linie hat 1 DEF und 1 verbleibendes HP (Marker auf der Karte). Es erhält 3-1=2 Schaden. Verliert das letzte HP, wird zerstört und den verbleibenden 1 Schadenspunkt erhält der Spieler, welcher zudem auch die Kosten des Wesens zurückerhält (- 2 Silber, kann nicht unter 0 gehen).
+Wenn ein Wesen zerstört wird, erhält der Spieler die Kosten des Wesens (-2, kann nicht unter 0 gehen) zurück (aber nicht der Zusatzkarten).
 
 Kampfbelohnung:
 Für jeden Sieg in einer Linie, erhält der Gewinner 1 Zynalith
